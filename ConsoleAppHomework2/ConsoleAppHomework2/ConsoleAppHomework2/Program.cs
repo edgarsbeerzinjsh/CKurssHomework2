@@ -5,17 +5,17 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 Console.WriteLine("1.Uzdevums - Sasveicināšanās konsoles aplikācija");
 Console.WriteLine();
 Console.WriteLine("Kā tevi sauc?");
-string Name = Console.ReadLine();
-Console.WriteLine("Sveiks, " + Name);
+string name = Console.ReadLine();
+Console.WriteLine("Sveiks, " + name);
 
 
 Console.WriteLine();
 Console.WriteLine("2.Uzdevums - int.Parse");
 Console.WriteLine();
 Console.WriteLine("Kāds ir tavs vecums?");
-int Age = int.Parse(Console.ReadLine());
-Age++;
-Console.WriteLine("Nākamgad tev būs " + Age + " gadi");
+int age = int.Parse(Console.ReadLine());
+age++;
+Console.WriteLine("Nākamgad tev būs " + age + " gadi");
 
 
 Console.WriteLine();
@@ -23,19 +23,19 @@ Console.WriteLine("3.Uzdevums - Math.Max");
 Console.WriteLine();
 Console.WriteLine("Lūdzu ievadi četrus skaitļus");
 Console.WriteLine("Tavs pirmais skaitlis:");
-int MaxNum1 = int.Parse(Console.ReadLine());
+int maxNum1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Tavs otrais skaitlis:");
-int MaxNum2 = int.Parse(Console.ReadLine());
+int maxNum2 = int.Parse(Console.ReadLine());
 Console.WriteLine("Tavs trešais skaitlis:");
-int MaxNum3 = int.Parse(Console.ReadLine());
+int maxNum3 = int.Parse(Console.ReadLine());
 Console.WriteLine("Tavs ceturtais skaitlis:");
-int MaxNum4 = int.Parse(Console.ReadLine());
+int maxNum4 = int.Parse(Console.ReadLine());
 
-int MaxNum12 = Math.Max(MaxNum1, MaxNum2);
-int MaxNum34 = Math.Max(MaxNum3, MaxNum4);
-int MaxNum1234 = Math.Max(MaxNum12, MaxNum34);
+int maxNum12 = Math.Max(maxNum1, maxNum2);
+int maxNum34 = Math.Max(maxNum3, maxNum4);
+int maxNum1234 = Math.Max(maxNum12, maxNum34);
 
-Console.WriteLine($"Lielākais no tevis ievadītajiem skaitļiem bija: {MaxNum1234}");
+Console.WriteLine($"Lielākais no tevis ievadītajiem skaitļiem bija: {maxNum1234}");
 
 
 Console.WriteLine();
@@ -43,19 +43,19 @@ Console.WriteLine("4.Uzdevums - Math.Min");
 Console.WriteLine();
 Console.WriteLine("Lūdzu ievadi četrus skaitļus");
 Console.WriteLine("Tavs pirmais skaitlis:");
-int MinNum1 = int.Parse(Console.ReadLine());
+int minNum1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Tavs otrais skaitlis:");
-int MinNum2 = int.Parse(Console.ReadLine());
+int minNum2 = int.Parse(Console.ReadLine());
 Console.WriteLine("Tavs trešais skaitlis:");
-int MinNum3 = int.Parse(Console.ReadLine());
+int minNum3 = int.Parse(Console.ReadLine());
 Console.WriteLine("Tavs ceturtais skaitlis:");
-int MinNum4 = int.Parse(Console.ReadLine());
+int minNum4 = int.Parse(Console.ReadLine());
 
-int MinNum12 = Math.Min(MinNum1, MinNum2);
-int MinNum34 = Math.Min(MinNum3, MinNum4);
-int MinNum1234 = Math.Min(MinNum12, MinNum34);
+int minNum12 = Math.Min(minNum1, minNum2);
+int minNum34 = Math.Min(minNum3, minNum4);
+int minNum1234 = Math.Min(minNum12, minNum34);
 
-Console.WriteLine($"Mazākais no tevis ievadītajiem skaitļiem bija: {MinNum1234}");
+Console.WriteLine($"Mazākais no tevis ievadītajiem skaitļiem bija: {minNum1234}");
 
 
 Console.WriteLine();
@@ -63,23 +63,23 @@ Console.WriteLine("5.Uzdevums - %");
 Console.WriteLine();
 Console.WriteLine("Lūdzu ievadi divus skaitļus");
 Console.WriteLine("Tavs pirmais skaitlis:");
-int DivNum1 = int.Parse(Console.ReadLine());
+int divNum1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Tavs otrais skaitlis:");
-int DivNum2 = int.Parse(Console.ReadLine());
+int divNum2 = int.Parse(Console.ReadLine());
 
-int DivLeft = DivNum1 % DivNum2;
+int divLeft = divNum1 % divNum2;
 
-Console.WriteLine($"Izdalot pirmo ievadīto skaitli ar otro, atlikumā paliek: {DivLeft}");
+Console.WriteLine($"Izdalot pirmo ievadīto skaitli ar otro, atlikumā paliek: {divLeft}");
 
 
 Console.WriteLine();
 Console.WriteLine("6.Uzdevums - Odd or Even");
 Console.WriteLine();
 Console.WriteLine("Lūdzu ievadi skaitli:");
-int OddEven = int.Parse(Console.ReadLine());
-bool isEven = OddEven % 2 == 0;
+int oddEven = int.Parse(Console.ReadLine());
+bool isEven = oddEven % 2 == 0;
 
-Console.WriteLine($"{OddEven} ir pāra skaitlis: {isEven}");
+Console.WriteLine($"{oddEven} ir pāra skaitlis: {isEven}");
 
 
 Console.WriteLine();
@@ -87,31 +87,31 @@ Console.WriteLine("7.Uzdevums - Taisnstūra laukuma aprēķināšana");
 Console.WriteLine();
 Console.WriteLine("Lūdzu ievadi taisnstūra malu garumus");
 Console.WriteLine("Malas A garums:");
-double Side1 = double.Parse(Console.ReadLine());
+double side1 = double.Parse(Console.ReadLine());
 Console.WriteLine("Malas B garums:");
-double Side2 = double.Parse(Console.ReadLine());
+double side2 = double.Parse(Console.ReadLine());
 
-double Area = Math.Round(Side1 * Side2, 2);
+double area = Math.Round(side1 * side2, 2);
 
-Console.WriteLine($"Taisnstūra laukums ir {Area}");
+Console.WriteLine($"Taisnstūra laukums ir {area}");
 
 
 Console.WriteLine();
 Console.WriteLine("8.Uzdevums - Taisnleņķa trijstūra laukuma aprēķināšana");
 Console.WriteLine();
 Console.WriteLine("Lūdzu ievadi vienādsānu taisnleņķa trīsstūra sānu malas garumu:");
-double SideLenght = double.Parse(Console.ReadLine());
+double sideLenght = double.Parse(Console.ReadLine());
 
-double AreaTriangle = Math.Round(SideLenght * SideLenght / 2, 2);
+double areaTriangle = Math.Round(sideLenght * sideLenght / 2, 2);
 
-Console.WriteLine($"Trīsstūra laukums ir {AreaTriangle}");
+Console.WriteLine($"Trīsstūra laukums ir {areaTriangle}");
 
 
 Console.WriteLine();
 Console.WriteLine("9.uzdevums - Interpolācija");
 Console.WriteLine();
 Console.WriteLine("Kā tevi sauc?");
-string Name9 = Console.ReadLine();
+string name9 = Console.ReadLine();
 Console.WriteLine("Kāds ir tavs vecums?");
-int Age9 = int.Parse(Console.ReadLine());
-Console.WriteLine($"Sveiks, {Name9}. Tu esi {Age9} gadus vecs.");
+int age9 = int.Parse(Console.ReadLine());
+Console.WriteLine($"Sveiks, {name9}. Tu esi {age9} gadus vecs.");
